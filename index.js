@@ -72,7 +72,12 @@ function markNumber(cell) {
 }
 
 function reset() {
-    location.reload();
+    const table = document.getElementById('cards');
+    table.innerHTML = '';
+    cards = [];
+    numbersCalled = [];
+    isGameComplete = false;
+    window.location.reload();
 }
 
 function clearCards() {
