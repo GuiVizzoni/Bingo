@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="bingo">
+        <h1>Bingo</h1>
+        <form>
+            <label for="cardName"><h2>Insira o Nome do Jogador:</h2></label>
+            <input type="text" id="cardName">
+            <button type="button" onclick="addCard()">Adicionar Cartela</button>
+            <button type="button" onclick="autoPlayBingo()">Começar Bingo</button>
+            <button type="button" onclick="startBingo()">Começar Bingo (um por clique)</button>
+            <button type="button" onclick="reset()">Recomeçar Bingo</button>
+            <button type="button" onclick="clearCards()">Limpar Cartelas</button>
+        </form>
+        <div class="cartelas">
+            <div id="cards">
+
+            </div>
+        </div>
+
+        <h2>Números Chamados:</h2>
+        <table id="numbersCalled"></table>
+    </div>
+
+    <footer class="rodape">
+        <p>Developed by @GuiVizzoni</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
